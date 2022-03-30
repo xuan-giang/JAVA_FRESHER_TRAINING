@@ -21,5 +21,18 @@ public class Main {
         ControlFlow controlFlow = new ControlFlow();
         controlFlow.controlFlow1();
         controlFlow.controlFlow2();
+
+        //ARRAY
+        System.out.println("----------------------------------");
+        Array array = new Array();
+        array.getArrayLength();
+        array.getSumArray();
+
+        array.printMatrix();
+        array.findElement();
+
+        array.sortArray();
+        System.out.println("After sort: ");
+        array.printArray();
     }
 }
