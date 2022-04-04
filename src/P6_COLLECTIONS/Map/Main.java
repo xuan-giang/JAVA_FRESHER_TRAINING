@@ -79,6 +79,29 @@ public class Main {
             System.out.println(iterator.next());
         }
 
+
+
     }
+
+    static void demo()
+    {
+        TreeMap<Integer, String> treeMap1 = new TreeMap<>();
+
+        treeMap1.put(1, "Nguyen Van A");
+        treeMap1.put(2, "Nguyen Van B");
+
+        TreeMap<Integer, String> treeMap2 = new TreeMap<>();
+        Iterator iterator = treeMap1.keySet().iterator();
+        while (iterator.hasNext())
+        {
+            Integer objectKey = (Integer) iterator.next();
+            String objectValue = treeMap1.get(objectKey);
+
+            treeMap2.put(objectKey, objectValue);
+        }
+
+    }
+
+
 
 }

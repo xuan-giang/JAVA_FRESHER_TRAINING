@@ -1,7 +1,5 @@
 package P6_COLLECTIONS.Set;
 
-import P6_COLLECTIONS.List.Student;
-
 import java.util.*;
 
 public class Main {
@@ -42,7 +40,7 @@ public class Main {
 
         // Print set
         System.out.println("\n========= HashSet ==========");
-        Iterator iterator = setObj.iterator();
+        Iterator<Object> iterator = setObj.iterator();
         while (iterator.hasNext())
         {
             System.out.println(iterator.next());
