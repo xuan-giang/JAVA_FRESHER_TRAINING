@@ -1,23 +1,17 @@
-package P5_FileProcessingandExceptionHandling.Exception;
-
-import java.io.File;
-import java.io.IOException;
-
-import java.io.File;
-import java.util.Formatter;
-import java.util.Scanner;
-
-import java.io.FileNotFoundException;
+package P5_FILE_PROCESSING_AND_EXCEPTION_HANDLING.Exception;
 
 public class Main {
     public static void main(String[ ] args) {
         /*
-        - Lỗi biên dịch
-        - Runtime exception
-        - Logic exception
+        1. Checked exception
+            - Compiler exception
+            - Runtime exception
+        2. Uncheck exception
+            - Logic exception
          */
 
         demoException1();
+
         demoException2();
 
         checkAge(5);

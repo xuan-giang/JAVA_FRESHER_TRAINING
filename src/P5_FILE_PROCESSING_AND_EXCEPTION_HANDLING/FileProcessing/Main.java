@@ -1,14 +1,12 @@
-package P5_FileProcessingandExceptionHandling.FileProcessing;
+package P5_FILE_PROCESSING_AND_EXCEPTION_HANDLING.FileProcessing;
 
 import java.io.*;
-import java.util.Formatter;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         //demoCreateFile();
 
-        //demoWriteFile();
+        demoWriteFile();
 
         //demoReadFile();
 
@@ -40,9 +38,9 @@ public class Main {
     static void demoWriteFile()
     {
         try {
-            //FileWriter myWriter = new FileWriter("filename.doc");
-            FileWriter myWriter = new FileWriter("filename.xlsx");
-            myWriter.write("Demo write fle word!");
+            FileWriter myWriter = new FileWriter("filename.doc");
+            //FileWriter myWriter = new FileWriter("filename.xlsx");
+            myWriter.write("Demo write fle word-------!");
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {

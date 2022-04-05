@@ -1,5 +1,9 @@
 package P7_GENERIC.GenericCollection;
 
+
+
+import P6_COLLECTIONS.List.Student;
+
 import java.util.*;
 
 public class Main {
@@ -9,7 +13,6 @@ public class Main {
 
         collectionSet();
 
-        collectionMap();
     }
 
     static void collectionList()
@@ -26,19 +29,11 @@ public class Main {
     {
         Set<Object> setObj = new HashSet<>();
 
-//        setObj.add("1");
-//        setObj.add(new Student("ABC", 123));
-//        setObj.add("Hello world");
-//        setObj.add(new Student("Nguyễn Xuân Giang", 21));
+        setObj.add("1");
+        setObj.add(new Student("ABC", 123));
+        setObj.add("Hello world");
+        setObj.add(new Student("Nguyễn Xuân Giang", 21));
 
-        setObj.add(21);
-        setObj.add(22);
-        setObj.add(7);
-        setObj.add(3);
-        setObj.add(4); // giong nhau
-        setObj.add(9);
-        setObj.add(4); // giong nhau
-        setObj.add(13);
 
         // Print set
         System.out.println("\n========= HashSet ==========");
@@ -49,23 +44,5 @@ public class Main {
         }
     }
 
-    static void collectionMap()
-    {
-        Map<String, String> mapObj = new HashMap<String, String>();
 
-        mapObj.put("NV01", "Nguyen Van A1"); // key giong nhau
-        mapObj.put("NV03", "Nguyen Van A2");
-        mapObj.put("NV02", "Nguyen Van A3");
-        mapObj.put("NV01", "Nguyen Van B"); // key giong nhau
-        mapObj.put("NV05", "Nguyen Van A5");
-        mapObj.put("NV04", "Nguyen Van A4");
-        mapObj.put("NV09", "Nguyen Van A9");
-
-
-        Iterator<Map.Entry<String, String>> iterator = mapObj.entrySet().iterator();
-        while (iterator.hasNext())
-        {
-            System.out.println(iterator.next());
-        }
-    }
 }

@@ -24,7 +24,7 @@ public class Main {
         mapObj.put("NV03", "Nguyen Van A2");
         mapObj.put("NV02", "Nguyen Van A3");
         mapObj.put("NV01", "Nguyen Van B"); // key giong nhau
-        mapObj.put("NV05", "Nguyen Van A5");
+        mapObj.put(null, "Nguyen Van A5");
         mapObj.put("NV04", "Nguyen Van A4");
         mapObj.put("NV09", "Nguyen Van A9");
 
